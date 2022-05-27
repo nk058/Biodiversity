@@ -203,7 +203,7 @@ server <- function(input, output,session) {
       dd_cat<-data[vernacularName==input$selectedVernacularName,]
       ###--Plot as per user input
       g<-ggplot(dd_cat,aes(x=eventDate, y=individualCount, fill=id))+geom_bar(stat="identity")+scale_fill_viridis(discrete = T) +
-      labs( x ="",y="", title = paste0("Total number of incidents","Species : ", unique(data$vernacularName)))+ theme_modern_rc() 
+      ggtitle("Species Ovservation - Trend of occurance")+ theme_minimal() 
       
       (ggplotly(g))  
       
