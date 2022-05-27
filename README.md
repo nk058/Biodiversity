@@ -1,4 +1,4 @@
-# Biodiversity
+# Biodiversity Prototype
 
 Biodiversity in National Park of Poland is an application that offers a graphical representation of the data with maps and charts.
 
